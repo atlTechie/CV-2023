@@ -1,0 +1,61 @@
+body {
+  background: blue;
+}
+
+.body,
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+
+footer {
+  padding: 1.5rem 0.5rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+section {
+  min-height: 100vh;
+}
+
+#experience,
+#projects,
+#contact {
+  color: #e8eaed;
+}
+
+#home,
+#experience,
+#projects,
+#contact {
+  padding-top: 4rem;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat !important;
+}
+
+#home {
+  color: #2d3239;
+  background: #66717e;
+  background-image: url("../src/img/pexels-rachel-claire-4992820.jpg");
+}
+
+#experience {
+  background: #383b53;
+}
+#experience .tab-pane {
+  padding: 2rem 0rem;
+  text-align: left;
+}
+
+#projects {
+  background: #32213a;
+}
+
+#contact {
+  background: #221627;
+}/*# sourceMappingURL=style.css.map */

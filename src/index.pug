@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css")
+        link(rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="../src/style.css")
+        title E. Wright
+    body
+        .page-wrapper.bg-success
+            header
+                include ../src/components/navigation.pug
+            main 
+                section#home.d-flex.flex-column.align-items-center
+                    .container.my-auto
+                        .row 
+                            .col-12.col-lg-8 
+                                .display-4 Innovative Software Developer
+                                p.lead Hi! I’m E. Wright, a graduate of the Art Institute of Atlanta, with over 15 years of professional experience developing dynamic user interfaces for websites, software and mobile applications.
+                                .row.text-center.mb-4.d-none
+                                    -for(i=0; i<3; i++) 
+                                        .col-12.col-md-4
+                                            .bi.bi-code-slash.display-4.d-block 
+                                            p Coding
+                                            p.d-none Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima maxime labore unde laborum rem natus.
+                                .row.w-md-75 
+                                    .col-12.col-md-6.mb-3.mb-md-0 
+                                        a.btn.btn-primary.w-100(href="./quote.html") Schedule Consultation 
+                                    .col-12.col-md-6 
+                                        a.btn.btn-outline-primary.w-100(href="#projects") View Work  
+
+
+                section#experience.d-flex.flex-column.align-items-center
+                    .container.my-auto 
+                        .row.mb-4 
+                            .col-12.text-center 
+                                h2 Experience
+                        .row.text-center.mb-4
+                            include ../src/components/tabbed-content.pug
+
+
+
+
+                section#projects
+                    .container.my-auto 
+                        .row.mb-4 
+                            .col-12.text-center 
+                                h2 Projects
+                section#contact
+                    .container.my-auto 
+                        .row.mb-4 
+                            .col-12.text-center 
+                                h2 Contact
+
+            footer.mt-auto 
+                .container.text-center  
+                    small Copyright 2022 - 2023 | E. Wright. All rights reserved.
+                script(src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")
+                script(src="../src/index.js") 

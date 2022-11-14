@@ -1,0 +1,62 @@
+@import "../src/scss/_variables.scss";
+
+body {
+  background: $bg;
+}
+
+.body,
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+
+footer {
+  padding: 1.5rem 0.5rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+section {
+  min-height: 100vh;
+}
+
+#experience,
+#projects,
+#contact {
+  color: $text-light;
+}
+
+#home,
+#experience,
+#projects,
+#contact {
+  padding-top: 4rem;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat !important;
+}
+
+#home {
+  color: $text-dark;
+  background: $bg-home;
+  background-image: url($moody-home-bg);
+}
+
+// Experience Section
+#experience {
+  background: $bg-experience;
+  .tab-pane {
+    padding: 2rem 0rem;
+    text-align: left;
+  }
+}
+#projects {
+  background: $bg-projects;
+}
+#contact {
+  background: $bg-contact;
+}

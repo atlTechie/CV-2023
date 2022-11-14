@@ -1,0 +1,19 @@
+ul#myTab.nav.nav-tabs.justify-content-center(role='tablist')
+    li.nav-item(role='presentation')
+        button#home-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#home-tab-pane' type='button' role='tab' aria-controls='home-tab-pane' aria-selected='true') 
+            span.bi.bi-pen.me-1
+            span UI/UX Design
+    li.nav-item(role='presentation')
+        button#profile-tab.nav-link(data-bs-toggle='tab' data-bs-target='#profile-tab-pane' type='button' role='tab' aria-controls='profile-tab-pane' aria-selected='false') 
+            span.bi.bi-code-slash.me-1
+            span UI/UX Development
+    li.nav-item(role='presentation')
+        button#contact-tab.nav-link(data-bs-toggle='tab' data-bs-target='#contact-tab-pane' type='button' role='tab' aria-controls='contact-tab-pane' aria-selected='false') 
+            span.bi.bi-database.me-1
+            span Systems Management
+#myTabContent.tab-content
+    #home-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab' tabindex='0') 
+
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae, quibusdam sapiente deleniti in dicta? Deserunt vel qui expedita optio!
+    #profile-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab' tabindex='0') ...
+    #contact-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab' tabindex='0') ...
